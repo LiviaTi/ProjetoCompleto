@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import './global.css';
 //jsx (JAVASCRIPT E XML) html integrado detro do JS
 
-import Routes from './routes'; 
+import RoutesMain from './routes'; 
 
 function App() {
   return (
-    <Routes />
+    <RoutesMain />
   );
 }
 

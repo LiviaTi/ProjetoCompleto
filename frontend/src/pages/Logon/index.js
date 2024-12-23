@@ -1,5 +1,8 @@
 import React from "react";
-import {FiLogIn} from 'react-icons/fi'
+import { Link } from 'react-router-dom';
+import {FiLogIn} from 'react-icons/fi';
+//Icons que podem ser vistos no site www.feathericons.com
+
 
 import './styles.css';
 
@@ -17,9 +20,10 @@ export default function Logon() {
 
                     <button className="button" type="submit">Entrar</button>
 
-                    <a href="/register">
-                    <FiLogIn Size={16} color="#E02841"/>
-                    Não tenho cadastro</a>
+                    <Link className=".back-link" to="/register">
+                      <FiLogIn Size={16} color="#E02841"/>
+                      Não tenho cadastro
+                    </Link>
                 </form>
             </section>
             <img src={heroesImg} alt="Heroes" />
